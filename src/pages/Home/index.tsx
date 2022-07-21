@@ -15,7 +15,7 @@ export function Home() {
       <Header profile={profile} />
       <div className={styles.main}>
         <Sidebar profile={profile} />
-        <Feed />
+        <Feed profile={profile} />
       </div>
     </div>
   );
