@@ -2,13 +2,14 @@
   width: 100%;
   padding: 2.5rem;
   background: #010409;
+  display: flex;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 66.4rem;
+  width: 61.6rem;
 }
 
 .tabs {
@@ -176,6 +177,183 @@
 .followingTabRepository .repositoryMain .info .extraOptions:hover {
   background: #30363d;
   border-color: #8b949e;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.5rem;
+}
+
+.right .latestChangesWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.right .latestChangesWrapper strong {
+  color: #c9d1d9;
+  margin-bottom: 2rem;
+}
+
+.latestChanges {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  position: relative;
+}
+
+.latestChanges::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #30363d;
+}
+
+.latestChanges .change {
+  margin-left: 2.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.latestChanges .change .time {
+  color: #8b949e;
+  position: relative;
+}
+
+.latestChanges .change .time::after {
+  content: "";
+  position: absolute;
+  left: -2.75rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #30363d;
+}
+
+.latestChanges .change .changelog {
+  color: #c9d1d9;
+  cursor: pointer;
+  transition: .15s ease;
+  max-width: 25rem;
+}
+
+.latestChanges .change .changelog:hover {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+.viewChangelogButton {
+  font-size: 1.15rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 2.25rem;
+  transition: 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #8b949e;
+}
+
+.viewChangelogButton:hover,
+.viewChangelogButton:hover svg {
+  color: #58a6ff;
+}
+
+.right .exploreRepositoriesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.right .exploreRepositoriesWrapper strong {
+  color: #c9d1d9;
+  margin-bottom: .75rem;
+}
+
+.exploreRepositories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.exploreRepository {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #8b949e7b;
+  gap: 1rem;
+}
+
+.exploreRepository:last-child {
+  border-bottom: 0;
+}
+
+.exploreRepository strong {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #c9d1d9;
+}
+
+.exploreRepository p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #8b949e;
+}
+
+.exploreRepository .techAndStars {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.exploreRepository .techAndStars .ballWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exploreRepository .techAndStars .ballWrapper .ball {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #f7e018;
+}
+
+.exploreRepository .techAndStars .ballWrapper span {
+  font-size: 1.2rem;
+  color: #8b949e;
+}
+
+.exploreRepository .techAndStars .starWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exploreRepository .techAndStars .starWrapper span {
+  font-size: 1.2rem;
+  color: #8b949e;
+}
+
+.exploreMoreButton {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #8b949e;
+}
+
+.exploreMoreButton:hover,
+.exploreMoreButton:hover svg {
+  color: #58a6ff;
 }
 
 footer {

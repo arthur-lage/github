@@ -1,4 +1,11 @@
-import { CaretDown, Lightbulb, Radio, Star, WifiHigh } from "phosphor-react";
+import {
+  ArrowRight,
+  CaretDown,
+  Lightbulb,
+  Radio,
+  Star,
+  WifiHigh,
+} from "phosphor-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
@@ -191,8 +198,81 @@ export function Feed({ profile }: Props) {
         </footer>
       </div>
       <div className={styles.right}>
-        <strong>Latest changes</strong>
-        <strong>Explore repositories</strong>
+        <div className={styles.latestChangesWrapper}>
+          <strong>Latest changes</strong>
+          <div className={styles.latestChanges}>
+            <div className={styles.change}>
+              <span className={styles.time}>14 hours ago</span>
+              <span className={styles.changelog}>Changelog example for my github clone!</span>
+            </div>
+            <div className={styles.change}>
+              <span className={styles.time}>14 hours ago</span>
+              <span className={styles.changelog}>Changelog example for my github clone!</span>
+            </div>
+            <div className={styles.change}>
+              <span className={styles.time}>14 hours ago</span>
+              <span className={styles.changelog}>Changelog example for my github clone!</span>
+            </div>
+            <div className={styles.change}>
+              <span className={styles.time}>14 hours ago</span>
+              <span className={styles.changelog}>Changelog example for my github clone!</span>
+            </div>
+          <div className={styles.viewChangelogButton}>
+            View changelog
+            <ArrowRight weight="regular" size={14} />{" "}
+          </div>
+          </div>
+        </div>
+        <div className={styles.exploreRepositoriesWrapper}>
+          <strong>Explore repositories</strong>
+          <div className={styles.exploreRepositories}>
+            <div className={styles.exploreRepository}>
+              <strong>Repository/repo-1</strong>
+              <p>This is a test repository for my github clone!</p>
+              <div className={styles.techAndStars}>
+                <div className={styles.ballWrapper}>
+                  <div className={styles.ball}></div>
+                  <span>Javascript</span>
+                </div>
+                <div className={styles.starWrapper}>
+                  <Star size={16} weight="bold" color="#8b949e" />
+                  <span>50</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.exploreRepository}>
+              <strong>Repository/repo-2</strong>
+              <p>This is a test repository for my github clone!</p>
+              <div className={styles.techAndStars}>
+                <div className={styles.ballWrapper}>
+                  <div className={styles.ball}></div>
+                  <span>Javascript</span>
+                </div>
+                <div className={styles.starWrapper}>
+                  <Star size={16} weight="bold" color="#8b949e" />
+                  <span>50</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.exploreRepository}>
+              <strong>Repository/repo-3</strong>
+              <p>This is a test repository for my github clone!</p>
+              <div className={styles.techAndStars}>
+                <div className={styles.ballWrapper}>
+                  <div className={styles.ball}></div>
+                  <span>Javascript</span>
+                </div>
+                <div className={styles.starWrapper}>
+                  <Star size={16} weight="bold" color="#8b949e" />
+                  <span>50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.exploreMoreButton}>
+            Explore more <ArrowRight weight="regular" size={14} />{" "}
+          </div>
+        </div>
       </div>
     </div>
   );
