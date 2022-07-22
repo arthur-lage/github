@@ -80,14 +80,15 @@ export function Feed({ profile }: Props) {
             <div className={styles.repositoryMain}>
               <div className={styles.info}>
                 <strong>user-2/repo-2</strong>
-                <button className={styles.star}>
-                  <Star size={16} weight="bold" color="#8b949e" />
-
+                <div className={styles.starWrapper}>
+                  <button className={styles.star}>
+                    <Star size={16} weight="bold" color="#8b949e" />
+                    <span>Star</span>
+                  </button>
                   <button className={styles.extraOptions}>
                     <CaretDown weight="fill" size={14} color="#8b949e" />
                   </button>
-                  <span>Star</span>
-                </button>
+                </div>
               </div>
               <span>Updated Jul 21</span>
             </div>
@@ -104,14 +105,15 @@ export function Feed({ profile }: Props) {
             <div className={styles.repositoryMain}>
               <div className={styles.info}>
                 <strong>user-3/repo-3</strong>
-                <button className={styles.star}>
-                  <Star size={16} weight="bold" color="#8b949e" />
-
+                <div className={styles.starWrapper}>
+                  <button className={styles.star}>
+                    <Star size={16} weight="bold" color="#8b949e" />
+                    <span>Star</span>
+                  </button>
                   <button className={styles.extraOptions}>
                     <CaretDown weight="fill" size={14} color="#8b949e" />
                   </button>
-                  <span>Star</span>
-                </button>
+                </div>
               </div>
               <span>Updated Jul 21</span>
             </div>
@@ -128,14 +130,15 @@ export function Feed({ profile }: Props) {
             <div className={styles.repositoryMain}>
               <div className={styles.info}>
                 <strong>user-4/repo-4</strong>
-                <button className={styles.star}>
-                  <Star size={16} weight="bold" color="#8b949e" />
-
+                <div className={styles.starWrapper}>
+                  <button className={styles.star}>
+                    <Star size={16} weight="bold" color="#8b949e" />
+                    <span>Star</span>
+                  </button>
                   <button className={styles.extraOptions}>
                     <CaretDown weight="fill" size={14} color="#8b949e" />
                   </button>
-                  <span>Star</span>
-                </button>
+                </div>
               </div>
               <span>Updated Jul 21</span>
             </div>
@@ -203,24 +206,32 @@ export function Feed({ profile }: Props) {
           <div className={styles.latestChanges}>
             <div className={styles.change}>
               <span className={styles.time}>14 hours ago</span>
-              <span className={styles.changelog}>Changelog example for my github clone!</span>
+              <span className={styles.changelog}>
+                Changelog example for my github clone!
+              </span>
             </div>
             <div className={styles.change}>
               <span className={styles.time}>14 hours ago</span>
-              <span className={styles.changelog}>Changelog example for my github clone!</span>
+              <span className={styles.changelog}>
+                Changelog example for my github clone!
+              </span>
             </div>
             <div className={styles.change}>
               <span className={styles.time}>14 hours ago</span>
-              <span className={styles.changelog}>Changelog example for my github clone!</span>
+              <span className={styles.changelog}>
+                Changelog example for my github clone!
+              </span>
             </div>
             <div className={styles.change}>
               <span className={styles.time}>14 hours ago</span>
-              <span className={styles.changelog}>Changelog example for my github clone!</span>
+              <span className={styles.changelog}>
+                Changelog example for my github clone!
+              </span>
             </div>
-          <div className={styles.viewChangelogButton}>
-            View changelog
-            <ArrowRight weight="regular" size={14} />{" "}
-          </div>
+            <div className={styles.viewChangelogButton}>
+              View changelog
+              <ArrowRight weight="regular" size={14} />{" "}
+            </div>
           </div>
         </div>
         <div className={styles.exploreRepositoriesWrapper}>

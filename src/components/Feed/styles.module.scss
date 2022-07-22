@@ -125,7 +125,7 @@
   color: #c9d1d9;
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   transition: 0.15s ease;
 }
 
@@ -140,12 +140,14 @@
 
 .followingTabRepository .repositoryMain .info .star {
   cursor: pointer;
-  border: 1px solid #8b949e;
+  border: 1px solid #8b949e7b;
+  border-right: 0;
   font-weight: 700;
+  padding: 0rem 1rem;
   color: rgba(255, 255, 255, 0.694);
   background: #21262d;
   transition: 0.2s ease;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.35rem;
@@ -156,21 +158,20 @@
 }
 
 .followingTabRepository .repositoryMain .info .star:hover {
-  background: #30363d;
   border-color: #8b949e;
+  background: #30363d;
 }
 
 .followingTabRepository .repositoryMain .info .extraOptions {
   cursor: pointer;
   display: flex;
   align-items: center;
+  padding: 0.7rem 0.75rem;
+  border-radius: 0 0.5rem 0.5rem 0;
   justify-content: center;
-  margin-left: 1rem;
-  background: transparent;
-  border: 0;
+  border: 1px solid #8b949e7b;
   height: 100%;
-  border-left: 1px solid #8b949e;
-  padding-left: 0.75rem;
+  background: #21262d;
   transition: 0.2s ease;
 }
 
