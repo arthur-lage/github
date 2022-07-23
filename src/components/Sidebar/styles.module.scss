@@ -1,12 +1,12 @@
 .container {
-  width: 33.725rem;
+  max-width: 33.725rem;
   display: flex;
   flex-direction: column;
   background: #0d1117;
   border-right: 1px solid #30363d;
   height: 100%;
   padding: 3.25rem;
-  grid-area: "sidebar";
+  // width: 50%;
 }
 
 .recentRepositories {
@@ -52,7 +52,8 @@
 .recentRepositories .searchBar input {
   background: #010409;
   border-radius: 0.6rem;
-  width: 26.5rem;
+  max-width: 26.5rem;
+  width: 100%;
   color: #fff;
   font-size: 1.35rem;
   padding: 0.5rem 1rem;

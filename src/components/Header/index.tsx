@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 
 import { Link } from "react-router-dom";
 import { Bell, CaretDown, Plus } from "phosphor-react";
+
+import { Hamburger } from "../Hamburger";
 
 type Props = {
   profile: {
@@ -12,8 +14,14 @@ type Props = {
 };
 
 export function Header({ profile }: Props) {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
   return (
     <header className={styles.header}>
+      <Hamburger
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
       <nav className={styles.nav}>
         <Link className={styles.logo} to="/">
           <svg
@@ -51,14 +59,14 @@ export function Header({ profile }: Props) {
         </ul>
       </nav>
       <section className={styles.actions}>
-        <button className="notifications-button">
+        <button className={styles.notificationsButton}>
           <Bell size={20} color="#fff" />
         </button>
-        <button className="new-button">
+        <button className={styles.newButton}>
           <Plus size={20} color="#fff" />
           <CaretDown size={10} weight="fill" color="#fff" />
         </button>
-        <button className="profile-button">
+        <button className={styles.profileButton}>
           <img src={profile.avatar} alt={profile.name} />
           <CaretDown size={10} weight="fill" color="#fff" />
         </button>

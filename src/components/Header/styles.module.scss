@@ -78,3 +78,35 @@
   height: 2rem;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 1011px) {
+  .nav ul li a {
+    font-size: 1.25rem;
+  }
+
+  .actions {
+    gap: 0.75rem;
+  }
+
+  .searchBar input {
+    width: 21.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+  }
+
+  .searchBar {
+    display: none;
+  }
+
+  .actions .newButton {
+    display: none;
+  }
+  
+  .actions .profileButton {
+    display: none;
+  }
+}
