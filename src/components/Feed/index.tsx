@@ -46,11 +46,13 @@ export function Feed({ profile }: Props) {
           <div className={styles.followingTabRepository}>
             <div className={styles.repositoryHeader}>
               <img src={profile.avatar} alt="user-1" />
-              <span>
-                <strong>user-1</strong> created a repository{" "}
-                <strong>user-1/repo-1</strong>
-              </span>
-              <span className={styles.time}>2 hours ago</span>
+              <div>
+                <span className={styles.repositoryName}>
+                  <strong>user-1</strong> created a repository{" "}
+                  <strong>user-1/repo-1</strong>
+                </span>
+                <span className={styles.time}>2 hours ago</span>
+              </div>
             </div>
             <div className={styles.repositoryMain}>
               <div className={styles.info}>
@@ -71,11 +73,13 @@ export function Feed({ profile }: Props) {
           <div className={styles.followingTabRepository}>
             <div className={styles.repositoryHeader}>
               <img src={profile.avatar} alt="user-2" />
-              <span>
-                <strong>user-2</strong> created a repository{" "}
-                <strong>user-2/repo-2</strong>
-              </span>
-              <span className={styles.time}>3 hours ago</span>
+              <div>
+                <span className={styles.repositoryName}>
+                  <strong>user-2</strong> created a repository{" "}
+                  <strong>user-2/repo-2</strong>
+                </span>
+                <span className={styles.time}>3 hours ago</span>
+              </div>
             </div>
             <div className={styles.repositoryMain}>
               <div className={styles.info}>
@@ -96,11 +100,13 @@ export function Feed({ profile }: Props) {
           <div className={styles.followingTabRepository}>
             <div className={styles.repositoryHeader}>
               <img src={profile.avatar} alt="user-3" />
-              <span>
-                <strong>user-3</strong> created a repository{" "}
-                <strong>user-3/repo-3</strong>
-              </span>
-              <span className={styles.time}>5 hours ago</span>
+              <div>
+                <span className={styles.repositoryName}>
+                  <strong>user-3</strong> created a repository{" "}
+                  <strong>user-3/repo-3</strong>
+                </span>
+                <span className={styles.time}>5 hours ago</span>
+              </div>
             </div>
             <div className={styles.repositoryMain}>
               <div className={styles.info}>
@@ -121,11 +127,13 @@ export function Feed({ profile }: Props) {
           <div className={styles.followingTabRepository}>
             <div className={styles.repositoryHeader}>
               <img src={profile.avatar} alt="user-4" />
-              <span>
-                <strong>user-4</strong> created a repository{" "}
-                <strong>user-4/repo-4</strong>
-              </span>
-              <span>6 hours ago</span>
+              <div>
+                <span className={styles.repositoryName}>
+                  <strong>user-4</strong> created a repository{" "}
+                  <strong>user-4/repo-4</strong>
+                </span>
+                <span className={styles.time}>6 hours ago</span>
+              </div>
             </div>
             <div className={styles.repositoryMain}>
               <div className={styles.info}>
@@ -150,10 +158,10 @@ export function Feed({ profile }: Props) {
             <div>
               <Lightbulb weight="bold" color="#8b949e" size={22} />
               <span className={styles.proTip}>ProTip!</span> The feed shows you
-              events from people you <div className={styles.link}>follow</div>
+              events from people you <span className={styles.link}>follow</span>
               and repositories you
-              <div className={styles.link}>watch</div> or
-              <div className={styles.link}>star</div>.
+              <span className={styles.link}>watch</span> or
+              <span className={styles.link}>star</span>.
             </div>
             <div>
               <WifiHigh weight="bold" color="#8b949e" size={22} /> Subscribe to

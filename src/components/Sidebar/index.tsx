@@ -12,6 +12,7 @@ type Props = {
 export function Sidebar({ profile }: Props) {
   return (
     <div className={styles.container}>
+      <span className={styles.repositoriesTextMobile}>Repositories</span>
       <div className={styles.recentRepositories}>
         <div className={styles.top}>
           <strong>Recent Repositories</strong>

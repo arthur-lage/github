@@ -6,12 +6,17 @@
   border-right: 1px solid #30363d;
   height: 100%;
   padding: 3.25rem;
-  // width: 50%;
 }
 
 .recentRepositories {
   display: flex;
   flex-direction: column;
+}
+
+.repositoriesTextMobile {
+  font-size: 1.6rem;
+  color: #c9d1d9;
+  display: none;
 }
 
 .recentRepositories .top {
@@ -126,4 +131,62 @@
 .recentActivity p {
   color: #8b949e;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100vw;
+    padding: 3.25rem 2rem;
+    background: #010409;
+    border-right: 0;
+  }
+
+  .recentRepositories .searchBar input {
+    max-width: 100vw;
+  }
+
+  .recentRepositories .top .newButton {
+    display: none;
+  }
+
+  .repositoriesTextMobile {
+    display: block;
+  }
+
+  .recentRepositories .top strong {
+    display: none;
+  }
+
+  .recentRepositories .repositoryLinks {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #30363d;
+  }
+
+  .recentRepositories {
+    padding: 3rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+  }
+
+  .divisor {
+    display: none;
+  }
+
+  .recentActivity {
+    margin-top: 2rem;
+  }
+
+  .recentActivity strong {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  .recentActivity p {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+  }
 }

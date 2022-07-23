@@ -444,6 +444,28 @@ footer .bottom ul li:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1309px) {
+  footer .bottom .link {
+    display: none;
+  }
+
+  footer .top div {
+    display: inline;
+  }
+
+  footer .top div svg {
+    margin-right: 0.5rem;
+  }
+
+  footer .top div .link {
+    margin: 0 0.3rem;
+  }
+
+  footer .bottom {
+    gap: clamp(5vw, 7vw, 10vw);
+  }
+}
+
 @media screen and (max-width: 1011px) {
   .right {
     display: none;
@@ -456,11 +478,14 @@ footer .bottom ul li:hover {
     max-width: 100vw;
   }
 
-  footer .bottom .link {
-    display: none;
+  .repositoryHeader div {
+    display: flex;
+    flex-direction: column;
   }
 
-  footer .bottom {
-    gap: clamp(5vw, 7vw, 10vw);
+  .followingTabRepository .repositoryHeader .time {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
   }
 }
