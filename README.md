@@ -6,7 +6,11 @@ A responsive clone of the homepage of GitHub, using ReactJS.
 
 ## 🌆 Images
 
-
+<img src="./assets/screenshot-1.png" alt="GitHub Clone - Desktop" >
+<img src="./assets/screenshot-2.png" alt="GitHub Clone - Desktop" >
+<img src="./assets/screenshot-3.png" alt="GitHub Clone - Mobile" >
+<img src="./assets/screenshot-4.png" alt="GitHub Clone - Mobile" >
+<img src="./assets/screenshot-5.png" alt="GitHub Clone - Mobile" >
 
 ## ⚠ Requirements
 
