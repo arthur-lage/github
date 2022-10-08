@@ -1,4 +1,4 @@
-# github-clone
+# Github
 
 ## ✉ About
 
@@ -53,4 +53,4 @@ npm run dev
 
 If you wish to test the application, click the link below:
 
-[github-clone](https://github-clone-al.vercel.app)
+[Github](https://github-al.vercel.app)
