@@ -4,6 +4,8 @@
 
 A responsive clone of the homepage of GitHub, using ReactJS.
 
+⚠ IMPORTANT: This project was made for educational purposes only. All rights are reserved to Github. ⚠
+
 ## 🌆 Images
 
 <img src="./assets/screenshot-1.png" alt="GitHub Clone - Desktop" >
